@@ -1,20 +1,36 @@
 @import url('https://fonts.googleapis.com/css?family=Inconsolata:400,700|Merriweather:300,400&display=swap');
 
-.logo {
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+
+.logo-container {
   font-family: 'Merriweather', serif;
   font-weight: 300;
-  display: inline-block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 20%;
+  height: 8rem;
   box-sizing: border-box;
   border: 1px solid;
-  padding: 0 15px;
+  padding: 15px;
   margin: 50px 20vw;
   background-color: #fff;
+}
+
+.logo-img {
+  /* width: 100%; */
+  height: 100%;
+}
+
+.marker {
+  font-family: 'Permanent Marker';
 }
 
 body {
   font-family: 'Inconsolata', monospace;
   font-weight: 300;
-  background-color: #999;
+  background-color: #5c7a96;
+  margin: 0;
 }
 
 nav {
@@ -23,6 +39,7 @@ nav {
   align-content: stretch;
   width: 60vw;
   margin: 0 auto;
+  margin-bottom: 50px;
   background-color: #fff;
   border: 1px solid #000;
   height: 57px;
@@ -60,11 +77,17 @@ main {
 h1 {
   text-align: center;
   font-weight: 300;
+  font-size: 24px;
+}
 
+h2 {
+  text-align: center;
+  border-bottom: 1px solid;
+  padding-bottom: 1rem;
 }
 
 span.date, span.location {
-  display: block;
+
   font-weight: 700;
   margin: 20px auto;
 }
@@ -81,77 +104,153 @@ span.date, span.location {
 }
 
 /*================================
-    responsive iframe
+    responsive container
 ================================*/
-
-.form {
-  border: 1px solid #000;
-  background-color: #fff;
-}
-
-.form > h3 {
-  padding-left: 20px;
-}
-
-iframe {
-  display: block;
-  margin: 0 auto;
-}
 
 .resp-container {
   position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
   overflow: hidden;
-  padding-top: 53%;
-  border-top: 1px solid #000;
-}
-
-.form > .resp-container {
-  padding-top: 73%;
-}
-
-.resp-iframe {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  border: 0;
-}
-
-/*=========================
-    google form
-=========================*/
-
-/*=====================
-    resources styles
-=====================*/
-
-.resources {
   background-color: #fff;
-  box-sizing: border-box;
-  border: 1px solid #000;
-  padding: 20px;
-  margin-top: 50px;
-  margin-bottom: 20vw;
-}
-
-.resources > h2 {
-  font-size: 2em;
-}
-
-ul > li, ul > li > a {
-  padding: 5px 0;
-}
-
-ul > li > a {
-  color: #000;
-  text-decoration: none;
+  margin-bottom: 50px;
+  padding: 2rem;
   font-size: 18px;
 }
 
-ul > li > a:hover {
+.inner-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+
+/*=========================
+    cta container
+=========================*/
+
+
+ul.cta-ul {
+  flex-basis: 50%;
+}
+
+ul.cta-ul a {
   text-decoration: underline;
 }
+
+img.cta-qr {
+  flex-basis: 30%;
+}
+
+
+/*=========================
+    letter container
+=========================*/
+.letter-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.bold {
+  font-weight: 600;
+}
+
+/*=====================
+    form styles
+=====================*/
+.form-container {
+  flex-direction: column;
+  padding: 0 3rem 3rem 3rem;
+  text-align: center;
+}
+
+.form-header {
+  width: 80%;
+}
+
+.form-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60%;
+  height: 6rem;
+  border-radius: 1rem;
+  background-color: #00274C;
+  font-size: 3rem;
+  margin: 3rem 0;
+}
+
+a.survey-link-2 {
+  text-decoration: none;
+  color:#fffb00;
+}
+
+/*=====================
+    reviews styles
+=====================*/
+
+.stars-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.star>img {
+  width: 100%;
+}
+
+.star {
+  width:3rem;
+}
+
+/*=====================
+    demands styles
+=====================*/
+.demands-container {
+  flex-direction: column;
+}
+
+.demands-list > li {
+  margin: 2rem 0;
+  font-weight: 600;
+}
+
+
+/*=====================
+    reviews styles
+=====================*/
+
+.reviews-container {
+  flex-direction: column;
+}
+
+.reviews-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.inner-container {
+  width: 80%;
+}
+
+.review {
+  margin: 2rem 0;
+}
+
+.mascot-wrapper {
+  width: 60%;
+}
+
+.mascot {
+  width: 100%;
+}
+
 
 /*SCROLL TOP*/
 .scroll-top {
@@ -175,38 +274,62 @@ ul > li > a:hover {
 @media screen and (max-width: 426px) {
 
   .logo {
-    display: block;
+    display: flex;
     width: 100%;
-    margin: 20px auto;
+
     text-align: center;
+    margin: 0;
+  }
+
+  .logo-container {
+    width: 100%;
+    height: initial;
+  }
+
+  .logo-img {
+    width: 100%;
+    height: initial;
   }
 
   nav {
     width: 100%;
-  }
-
-  header {
-    width: 100%;
-    box-sizing: border-box;
-    padding: 15px;
-    margin-top: 20px;
+    margin: 0;
+    display: none;
   }
 
   main {
     width: 100%;
     box-sizing: border-box;
+    font-size: 18px;
   }
 
   h1 {
     font-size: 1.5rem;
   }
 
-  .phone {
+  .form-button {
+    width: 90%;
+    height: 10rem;
+  }
+
+  .crumbling-container {
     width: 100%;
   }
 
-  .resources > ul > li > a {
-    font-size: 24px;
+  .crumbling-img {
+    width: 100%;
+  }
+
+  .reviews-wrapper {
+    flex-direction: column;
+  }
+
+  .cta-container {
+    flex-direction: column;
+  }
+
+  .cta-ul > li {
+    margin: 2rem 0;
   }
 
 }

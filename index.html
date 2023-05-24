@@ -1,5 +1,6 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,54 +8,142 @@
   <link rel="stylesheet" href="style.css">
   <title>2707tenants</title>
 </head>
+
 <body>
-  <script
-  src="https://code.jquery.com/jquery-3.4.1.js"
-  integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
-  crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+    crossorigin="anonymous"></script>
 
-<div class="logo"><h2>2707tenants</h2></div>
-<nav>
-  <span class="nav-item 01">HOME</span>
-  <span class="nav-item 02">TENANT FORM</span>
-  <span class="nav-item 03">RESOURCES</span>
-</nav>
-  <header>
-    <div class="next-meeting">
-      <h1 class="next-date">The last tenant's association meeting was<span class="date">Saturday, Feb 8, 2020 at </span><span class="location">NBHD Coffeee shop</span></h1>
-    </div>
-    <div class="phone">
-      <p>For questions, contact Stephanie at (202) 670-3827</p>
-    </div>
-    <div class="resp-container">
-      <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2473.848774949735!2d-73.94441259014923!3d40.819389161645844!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x7b45bc231928726a!2sNBHD%20Brulee!5e0!3m2!1sen!2sus!4v1581033967062!5m2!1sen!2sus" class="resp-iframe" allowfullscreen=""></iframe>
-    </div>
-  </header>
+  <div class="logo">
+    <div class="logo-container">
+      <img src="./media/Mckinley tenants association logo.png"
+        alt="McKinley Tenants Association Logo" class="logo-img">
+      </div>
 
+  </div>
+  <nav class="marker">
+    <span class="nav-item 01">HOME</span>
+    <span class="nav-item 02">JOIN US!</span>
+    <span class="nav-item 03">DEMANDS</span>
+    <span class="nav-item 04">REVIEWS</span>
+    <span class="nav-item 05">TAKE ACTION</span>
+  </nav>
   <main>
+    
 
-    <div class="form">
-      <h3 class="form-title">For residents of 2707 Frederick Douglass or 300 w144th St. whose name is on a lease.</h3>
-      <div class="resp-container">
-      <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSf5xmvBtYmGCqFhRLew1NCoc4-kIFgwenFsq9ClZC3vab8YIQ/viewform" frameborder="0" class="resp-iframe"></iframe>
+    <div id="letter" class="resp-container">
+      <h2 class="open-letter-header marker">OPEN LETTER TO MCKINLEY MANAGEMENT<br>FROM YOUR TENANTS</h2>
+      <div class="letter-container inner-container">
+        <p class="letter-header">You say you're raising rents because of market forces, but you own <span
+            class="bold">60%</span> of workforce housing in Washtenaw County, meaning<span class="bold"> your rent
+            increases are the market forces.</span></p>
+        <p class="letter-p">You are currently trying to raise ouer rent by up to $270 per month. Some tenants are facing
+          increasese of over 20%.</p>
+        <p class="letter-p">As rent increases far outpace wage increases, we are being forced to move farther away from
+          the communities where we work. We believe that teachers should have the option to live close to their schools.
+          Nurses should have the option to live close to the hospital.</p>
+        <p class="letter-p">The conditions in our apartments are abysmal. We live with mold, mildew, mice, and flooded
+          basements and laundry rooms. Our water has been shut off, or we have not had hot water. This is a regular
+          occurrence. </p>
+        <p class="letter-p">We are shining a light on the what we believe is an immoral business model of allowing
+          apartment buildings to crumble while squeezing their tenants for every last dime. </p>
+        <p class="marker letter-sign-off">-McKinley Tenant's Association</p>
+        <a href="./media/Mckinley tenants association flyer.pdf" target="_blank" class="letter-link bold">Read the full
+          letter</a>
       </div>
     </div>
-    <div class="resources">
-      <h2 class="resources-title">Resources</h2>
-      <ul>
-        <li class="li1">
-          <a href="https://www.dos.ny.gov/licensing/pdfs/DOS-Guidance-Tenant-Protection-Act-Rev.1.31.20.pdf" target="_blank">Update: Broker fees have mostly been outlawed in NYC</a></li>
-        <li class="li2">
-          <a href="https://rentguidelinesboard.cityofnewyork.us/wp-content/uploads/2019/08/aptorders.pdf" target="_blank">Chart showing rent guidelines for rent-stabilized apartemnts</a></li>
-        <li class="li3">
-          <a href="https://www1.nyc.gov/site/hpd/news/086-19/hpd-start-the-2019-2020-heat-season-nyc#/0" target="_blank">Heating requirements for NYC Apartments</a></li>
-        <li class="li4"><a href="https://streeteasy.com/blog/do-landlords-have-to-supply-appliances/" target="_blank">Are landlords required to repair appliances?</a></li>
-        <li class="li5"><a href="https://ag.ny.gov/sites/default/files/tenant_harassment._5.24.17.pdf" target="_blank">Updated explanation of what constitutes tenant harrassment (2017)</a></li>
-        <li class="li6"><a href="https://www1.nyc.gov/site/buildings/homeowner/property-history.page" target="_blank">Search your building's maintenance/complaint history</a></li>
-      </ul>
+
+
+    <div id="survey" class="resp-container">
+      <h2 class="form-header marker">IF YOU ARE A MCKINLEY TENANT, JOIN THE MCKINLEY TENANT'S ASSOCIATION BY <a
+          href="https://forms.gle/gRiFe9PRq1UvX3R97" class="survey-link" target="_blank">TAKING THIS SIMPLE SURVEY</a>
+      </h2>
+      <div class="inner-container form-container">
+        <div class="form-button">
+          <a href="https://forms.gle/gRiFe9PRq1UvX3R97" target="_blank" class="survey-link-2"><span
+              class="button-text bold">TAKE THE SURVEY</span></a>
+        </div>
+        <h3 class="form-title">McKinley touts itself as workforce housing. Whay are you making it impossible for Ann
+          Arbor's workforce to afford to live here?</h3>
+        <div class="crumbling-container">
+          <img src="./media/crumbling.png" alt="" class="crumbling-img">
+        </div>
+      </div>
     </div>
+
+
+    <div id="demands" class="resp-container">
+      <h2 class="form-header marker">OUR DEMANDS</h2>
+      <div class="inner-container demands-container">
+        <ol class="demands-list">
+          <li>No increase in rent for leases signed in 2023</li>
+          <li>Humane, livable conditions: More responsiveness from maintenance / Maintenance to respond within 24 hours
+            / high quality repairs</li>
+          <li>Mold remediation</li>
+          <li>No threats of rent increases for not signing a lease early</li>
+          <li>No increase to the late fees (they have recently gone from $30 to $100)</li>
+          <li>Give a 10 day grace period to allow tenants to pay rent on time</li>
+          <li>Remove storage fees</li>
+          <li>Dismissal of pet fees</li>
+          <li>Free laundry, provided by McKinley</li>
+        </ol>
+        <div class="demand-sign">
+          <h3>-The McKinley Tenants Association</h3>
+        </div>
+      </div>
+    </div>
+
+
+    <div id="reviews" class="resp-container">
+      <h2 class="reviews-header marker">Reviews of McKinley</h2>
+      <div class="inner-container reviews-container">
+        <div class="stars-container">
+          <div class="star"><img src="./media/star filled.png" alt=""></div>
+          <div class="star"><img src="./media/star empty.png" alt=""></div>
+          <div class="star"><img src="./media/star empty.png" alt=""></div>
+          <div class="star"><img src="./media/star empty.png" alt=""></div>
+          <div class="star"><img src="./media/star empty.png" alt=""></div>
+        </div>
+        <div class="reviews-wrapper">
+          <div class="reviews-group">
+            <div class="review">“My wife and I are always sick when we are at home and healthy when we’re away. We
+              suspect mold or uncleaned vents to be the problem causing our allergy-like symptoms.”</div>
+            <div class="review">“Our cat also developed a constant stuffy nose since moving in.”
+            </div>
+            <div class="review">“…there are also carpet beetles that have given me a rash.”</div>
+            <div class="review">“Roaches”</div>
+            <div class="review">“Our oven has been sparking…it has been broken since December.”</div>
+            <div class="review">“This is slumlord stuff, but I feel trapped here, honestly.”</div>
+          </div>
+          <div class="mascot-wrapper">
+            <img src="./media/mascot.png" alt="mascot image" class="mascot">
+            <p class="mascot-name marker">OUR MASCOT MCKINLEY THE MOUSE</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div id="cta" class="resp-container">
+      <h2 class="cta-heading marker">COMMUNITY CALLS TO ACTION</h2>
+      <div class="cta-container inner-container">
+        <ul class="cta-ul">
+          <li>1. Sign the petition to support McKinley Residents</li>
+          <li>2. Contact your representatives in Lansing and express your support for overturning the ban on rent
+            control. This state-wide ban prevents cities and counties from passing local measures to stabilize rent.
+          </li>
+          <li><a href="https://www.senate.michigan.gov/FindYourSenator/" target="_blank" class="cta">Find your state
+              senator</a></li>
+          <li><a href="https://bit.ly/41LRsR5" target="_blank" class="cta">More info about overturning the ban on rent
+              control</a></li>
+        </ul>
+        <img src="./media/petition_qr.jpg" alt="" class="cta-qr">
+      </div>
+
+    </div>
+
   </main>
   <div class="scroll-top"></div>
   <script src="app.js"></script>
 </body>
+
 </html>
